@@ -4,6 +4,8 @@ from abc import ABC, abstractmethod
 
 from bad.serializer_demo import Song
 
+# Serializer only for Songs objects
+
 class SerializerInterface(ABC):
     @abstractmethod
     def _serialize(self, song: Song) -> str:
